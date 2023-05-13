@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   background-color: #ffffff;
@@ -30,8 +31,14 @@ body {
     font-size: 4rem;
 }
 
-.quote-text{
+.quote{
     font-size: 2.5rem;
+    
+}
+
+.large-quote-text{
+    font-size: 2rem;
+    
 }
 
 .quote-author{
@@ -76,6 +83,22 @@ button:active{
 .twitter-btn:hover{
     color:#38a1f3;
 }
+
+
+/* Loader */
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #333; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 /* media quary for tablet and smaller */
 
 @media screen and (max-width: 1000px) {
